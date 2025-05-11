@@ -21,4 +21,6 @@ class AppColors {
   static const Color onError = Color(0xFFFFFFFF);
   static const Color white = Colors.white;
   static const Color black = Colors.black;
+
+  static const Color grey = Color(0xffE6E6E6);
 }

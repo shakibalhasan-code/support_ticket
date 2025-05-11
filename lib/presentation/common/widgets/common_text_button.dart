@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:ticket_support/core/utils/styles/app_colors.dart';
 
 class CommonTextButton extends StatelessWidget {
   final String text;
@@ -32,10 +33,7 @@ class CommonTextButton extends StatelessWidget {
               isOutline == true
                   ? Colors.transparent
                   : Theme.of(context).primaryColor,
-          border:
-              isOutline == true
-                  ? Border.all(color: Theme.of(context).primaryColor)
-                  : null,
+          border: isOutline == true ? Border.all(color: AppColors.grey) : null,
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 12.h),
@@ -49,9 +47,7 @@ class CommonTextButton extends StatelessWidget {
                       text,
                       style: theme.textTheme.bodyLarge!.copyWith(
                         color:
-                            isOutline == true
-                                ? theme.primaryColor
-                                : Colors.white,
+                            isOutline == true ? AppColors.black : Colors.white,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
                       ),
