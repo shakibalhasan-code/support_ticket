@@ -1,4 +1,4 @@
-# ticket_support
+# Customer Support Ticket Booking App
 
 A new Flutter project.
 
