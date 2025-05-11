@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   static ThemeData defaultTheme = ThemeData(
     scaffoldBackgroundColor: AppColors.white,
+    primaryColor: AppColors.primary,
+    primaryColorLight: AppColors.primary,
 
     textTheme: TextTheme(
       bodySmall: GoogleFonts.manrope(

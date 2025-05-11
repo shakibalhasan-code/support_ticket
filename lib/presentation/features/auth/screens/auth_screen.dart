@@ -1,13 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:ticket_support/core/utils/app_icons.dart';
 import 'package:ticket_support/core/utils/app_image..dart';
 import 'package:ticket_support/presentation/common/widgets/boy_wrap_view.dart';
+import 'package:ticket_support/presentation/common/widgets/common_text_button.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class AuthScreen extends StatelessWidget {
+  const AuthScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,20 @@ class SplashScreen extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 20.h),
-          CupertinoActivityIndicator(color: Colors.black),
+          CommonTextButton(
+            text: 'Sign In',
+            onPressed: () {},
+            isOutline: false,
+            isLoading: false,
+          ),
+          SizedBox(height: 8.h),
+
+          CommonTextButton(
+            text: 'Sign Up',
+            onPressed: () {},
+            isOutline: true,
+            isLoading: false,
+          ),
         ],
       ),
     );

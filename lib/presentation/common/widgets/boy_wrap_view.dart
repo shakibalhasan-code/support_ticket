@@ -11,7 +11,11 @@ class BodyWrapView extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Column(children: [const SizedBox(height: 20), child]),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [const SizedBox(height: 20), child],
+          ),
         ),
       ),
     );
